@@ -301,37 +301,97 @@
                 </ul>
               </div>
               <div id="content">
-                <p>
-                  <strong>December 18, 2021</strong>
-                </p>
-                <p>
-                  Dear Applicant,<br /><br />
-                  We have completed our Early Action review of your application
-                  and have chosen to defer it to our Regular Action review.
-                  Please know that the Admissions Committee is very conservative
-                  in its early offers of admission, and the majority of students
-                  who apply in Early Action are deferred. In previous years,
-                  several hundred of them have subsequently been admitted in
-                  Regular Action.
-                </p>
-                <p>
-                  Please remember to complete the February Updates and Notes
-                  Form, which will be available through your account in
-                  mid-January. The form allows you to share your midyear grades
-                  and provides space for other updates to your application.
-                  Updates are not required, but if there is something you want
-                  to share, this is the opportunity to do so. You will hear from
-                  us again at the end of Regular Action in March after further
-                  review of your application.
-                </p>
-                <p>
-                  We hope that you have a healthy—and safe—holiday season, and
-                  best wishes for a happy New Year.<br /><br /><br />
-                  Sincerely,<br />
-                  <img src="./sig.png" height="50" /><br />
-                  Stuart Schmill<br />
-                  Dean of Admissions and Student Financial Services
-                </p>
+                <script>
+                  const ACCEPT = `
+                    <p>
+                      <strong>December 18, 2021</strong>
+                    </p>
+                    <p>
+                      Dear Applicant,<br /><br />
+                      On behalf of the Admissions Committee, it is my pleasure to offer you admission to the MIT Class of 2026! You stood out as one of the most talented and promising students in one of the most competitive applicant pools in the history of the Institute. Your commitment to personal excellence and principled goals, even during a year full of challenges and disruption, has convinced us you will both contribute to our diverse community and thrive in our academic environment. We think that you and MIT are a great match.
+                    </p>
+                    <p>
+                      You have until May 1, 2021 to let us know if you'll call MIT your home for the next four years. Until then, we look forward to helping you get to know us better. We are excited to invite you to join us virtually for CP✱ (the event formerly known as Campus Preview Weekend). Activities will take place throughout the entire month of April! CP✱ is one of the most fun and informative ways to discover all that MIT has to offer, and we will share more details with you over the coming months.
+                    </p>
+                    <p>
+                      MIT's mission is to educate students in science, technology, and other areas of scholarship, to best prepare them to solve the world's greatest challenges. Make no mistake, the rigor here is real, but so is the excitement of discovery, both inside and outside of the classroom. The ways students collaborate and help each other, especially in these unprecedented times, are varied and many.
+                    </p>
+                    <p>
+                      I hope you'll agree with us that MIt is the perfect place to prepare for your future. As a member of our community, you'll, join builders, scholars, entrepreneurs, and humanitarians. Together, you will make a true difference in a world that desperately needs you.
+                    </p>
+                    <p>
+                      Many congratulations, best wishes for a wonderful—and safe—holiday season, and welcome to MIT! Now stop reading this and go celebrate!<br /><br /><br />
+                      Warmly,<br />
+                      <img src="./sig.png" height="50" /><br />
+                      Stuart Schmill<br />
+                      Dean of Admissions and Student Financial Services
+                    </p>
+                  `;
+
+                  const REJECT = `
+                    <p>
+                      <strong>December 18, 2021</strong>
+                    </p>
+                    <p>
+                      Dear Applicant,<br /><br />
+                      The Admissions Committee has completed its review of your application. I am very sorry to tell you that you were not admitted to the MIT Class of 2026.
+                    </p>
+                    <p>
+                      Please understand that this is in no way a judgment of you as a student or as a person, since our decision has more to do with the applicant pool more than anything else—many of our applicants are not offered admission simply because we don't have enough space in our entering class. This year we had over 33,000 candidates for fewer than 1,500 offers of admission. Since all of our decisions are made at one time and all available spaces have been committed, all decisions are final.
+                    </p>
+                    <p>
+                      We truly appreciate your interest in MIT, and wish you the best in all of your future endeavors.<br /><br /><br />
+                      Sincerely,<br />
+                      <img src="./sig.png" height="50" /><br />
+                      Stuart Schmill<br />
+                      Dean of Admissions and Student Financial Services
+                    </p>
+                  `;
+
+                  const DEFER = `
+                    <p>
+                      <strong>December 18, 2021</strong>
+                    </p>
+                    <p>
+                      Dear Applicant,<br /><br />
+                      We have completed our Early Action review of your application
+                      and have chosen to defer it to our Regular Action review.
+                      Please know that the Admissions Committee is very conservative
+                      in its early offers of admission, and the majority of students
+                      who apply in Early Action are deferred. In previous years,
+                      several hundred of them have subsequently been admitted in
+                      Regular Action.
+                    </p>
+                    <p>
+                      Please remember to complete the February Updates and Notes
+                      Form, which will be available through your account in
+                      mid-January. The form allows you to share your midyear grades
+                      and provides space for other updates to your application.
+                      Updates are not required, but if there is something you want
+                      to share, this is the opportunity to do so. You will hear from
+                      us again at the end of Regular Action in March after further
+                      review of your application.
+                    </p>
+                    <p>
+                      We hope that you have a healthy—and safe—holiday season, and
+                      best wishes for a happy New Year.<br /><br /><br />
+                      Sincerely,<br />
+                      <img src="./sig.png" height="50" /><br />
+                      Stuart Schmill<br />
+                      Dean of Admissions and Student Financial Services
+                    </p>
+                  `;
+
+                  const rand = Math.random();
+
+                  if (rand < 0.05) {
+                    document.querySelector("#content").innerHTML = ACCEPT;
+                  } else if (rand < 0.3) {
+                    document.querySelector("#content").innerHTML = REJECT;
+                  } else {
+                    document.querySelector("#content").innerHTML = DEFER;
+                  }
+                </script>
               </div>
             </section>
           </div>
