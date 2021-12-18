@@ -1,0 +1,77 @@
+@font-face {
+  font-family: messinasans;
+  src: url(./fonts/MessinaSans-Light.eot?) format("embedded-opentype"),
+    url(./fonts/MessinaSans-Light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: messinasans;
+  src: url(./fonts/MessinaSans-LightItalic.eot?) format("embedded-opentype"),
+    url(./fonts/MessinaSans-LightItalic.woff) format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: messinasans;
+  src: url(./fonts/MessinaSans-Regular.eot?) format("embedded-opentype"),
+    url(./fonts/MessinaSans-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: messinasans;
+  src: url(./fonts/MessinaSans-RegularItalic.eot?) format("embedded-opentype"),
+    url(./fonts/MessinaSans-RegularItalic.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: messinasans;
+  src: url(./fonts/MessinaSans-SemiBold.eot?) format("embedded-opentype"),
+    url(./fonts/MessinaSans-SemiBold.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: messinasans;
+  src: url(./fonts/MessinaSans-SemiBoldItalic.eot?) format("embedded-opentype"),
+    url(./fonts/MessinaSans-SemiBoldItalic.woff) format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: messinasans;
+  src: url(./fonts/MessinaSans-Bold.eot?) format("embedded-opentype"),
+    url(./fonts/MessinaSans-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: messinasans;
+  src: url(./fonts/MessinaSans-BoldItalic.eot?) format("embedded-opentype"),
+    url(./fonts/MessinaSans-BoldItalic.woff) format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: messinasans;
+  src: url(./fonts/MessinaSans-Black.eot?) format("embedded-opentype"),
+    url(./fonts/MessinaSans-Black.woff) format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: messinasans;
+  src: url(./fonts/MessinaSans-BlackItalic.eot?) format("embedded-opentype"),
+    url(./fonts/MessinaSans-BlackItalic.woff) format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: cooper;
+  src: url(./fonts/CooperLightBT.eot?) format("embedded-opentype"),
+    url(./fonts/CooperLightBT.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
